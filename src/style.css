@@ -1,0 +1,56 @@
+:root {
+  --neon-glow-color: hsl(177, 100%, 50%); /* Light blue color for neon glow */
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100vh;
+  margin: 0px;
+  background-color: grey;
+  background-image: url(store-front.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.neon-text {
+  color: #fff; /* White text color */
+  text-shadow: 0 0 5px #fff, /* White glow */ 0 0 10px #fff,
+    /* Larger white glow */ 0 0 20px var(--neon-glow-color),
+    /* Light blue outer glow */ 0 0 30px var(--neon-glow-color),
+    /* Larger light blue outer glow */ 0 0 40px var(--neon-glow-color),
+    /* Even larger light blue outer glow */ 0 0 50px var(--neon-glow-color),
+    /* Largest light blue outer glow */ 0 0 60px var(--neon-glow-color); /* Super large light blue outer glow */
+  /* font-size: 2em; Adjust size as needed */
+  /* font-family: 'Your Font', sans-serif; Choose a suitable font */
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header,
+.footer {
+  background-color: rgb(29, 29, 29);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 200px;
+}
+
+.footer {
+  height: 50px;
+}
+
+.bodyDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
