@@ -17,6 +17,10 @@ const populateContent = function () {
   const menu = document.createElement('li');
   const contact = document.createElement('li');
 
+  menu.classList.add('menu');
+  home.classList.add('home');
+  contact.classList.add('contact');
+
   home.textContent = 'Home';
   menu.textContent = 'Menu';
   contact.textContent = 'Contact';
@@ -28,6 +32,7 @@ const populateContent = function () {
 
   const orderNow = document.createElement('div');
   orderNow.classList.add('orderNow');
+  orderNow.classList.add('menu');
   orderNow.textContent = 'Order Now';
   bodyDiv.append(orderNow);
 };
