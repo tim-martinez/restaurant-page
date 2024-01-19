@@ -3,12 +3,33 @@ const populateContent = function () {
   const bodyDiv = document.querySelector('.bodyDiv');
   const footer = document.querySelector('.footer');
 
-  const h1 = document.createElement('h1');
+  const byte = document.createElement('h1');
+  const sushi = document.createElement('h1');
+  byte.textContent = 'BYTE';
+  sushi.textContent = 'SUSHI';
+  byte.classList.add('neon-text');
+  sushi.classList.add('neon-text');
+  header.append(byte);
+  header.append(sushi);
 
-  h1.textContent = 'BYTE SUSHI';
-  h1.classList.add('neon-text');
+  const nav = document.createElement('ul');
+  const home = document.createElement('li');
+  const menu = document.createElement('li');
+  const contact = document.createElement('li');
 
-  header.append(h1);
+  home.textContent = 'Home';
+  menu.textContent = 'Menu';
+  contact.textContent = 'Contact';
+
+  nav.append(home);
+  nav.append(menu);
+  nav.append(contact);
+  header.append(nav);
+
+  const orderNow = document.createElement('div');
+  orderNow.classList.add('orderNow');
+  orderNow.textContent = 'Order Now';
+  bodyDiv.append(orderNow);
 };
 
 export default populateContent;
