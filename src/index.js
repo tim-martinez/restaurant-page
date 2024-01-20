@@ -15,3 +15,6 @@ menu.addEventListener('click', () => generateMenu());
 
 const contact = document.querySelector('.contact');
 contact.addEventListener('click', () => generateContact());
+
+const orderNow = document.querySelector('.orderNow');
+orderNow.addEventListener('click', () => generateMenu());
