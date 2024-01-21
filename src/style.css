@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0px;
   background-color: grey;
   background-image: url(store-front.png);
@@ -27,6 +27,7 @@ body {
 
 .content {
   height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -85,13 +86,13 @@ h1 {
   justify-content: center;
   opacity: 0.95;
   align-items: center;
-  font-size: 30px;
+  font-size: calc(22px + 0.5vw);
   font-weight: 900;
   color: white;
   background-color: rgb(47, 47, 47);
   margin-bottom: 50px;
-  height: 200px;
-  width: 200px;
+  height: 20vh;
+  width: 20vh;
   border-radius: 100%;
   border: 5px solid white;
   transition: background-color 0.3s, text-shadow 0.3s;
@@ -114,9 +115,8 @@ h1 {
 }
 
 .menuDiv {
-  height: 75%;
-  min-width: 500px;
-  max-width: 700px;
+  width: 70vw;
+  max-width: 600px;
   background-color: rgb(29, 29, 29);
   opacity: 0.95;
   border-radius: 3%;
@@ -124,6 +124,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   color: white;
+  /* overflow-y: auto; */
   box-shadow: 0 0 5px #fff, /* White glow */ 0 0 10px #fff,
     /* Larger white glow */ 0 0 20px var(--neon-glow-color),
     /* Light blue outer glow */ 0 0 30px var(--neon-glow-color),
@@ -139,13 +140,14 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-weight: 900;
+  font-size: calc(14px + 0.5vw);
+  font-weight: 500;
   padding: 20px;
 }
 
 .contactDiv {
-  height: 50%;
-  min-width: 500px;
+  height: 30vh;
+  min-width: 300px;
   max-width: 700px;
   background-color: rgb(29, 29, 29);
   opacity: 0.95;
@@ -165,9 +167,14 @@ h1 {
 
 .contactDiv p {
   margin: 0px;
-  font-size: 22px;
+  font-size: calc(16px + 0.5vw);
 }
 
 .contactDiv h2:first-child {
   margin-top: 0px;
+}
+
+.contactDiv h2 {
+  font-size: calc(20px + 0.5vw);
+  margin-bottom: 10px;
 }
